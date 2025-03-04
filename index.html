@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSS Revival</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/title.png" alt="OSS Revival" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="navbar-icons d-none d-lg-block">
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="hero-section">
+      <div id="particles-js"></div>
+      <div class="container">
+        <h1>Welcome to OSS Revival</h1>
+        <p>Empowering open-source, one project at a time.</p>
+        <a href="#contact" class="btn btn-cta">Get Started</a>
+      </div>
+      <div class="wave"></div>
+    </section>
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2>Services</h2>
+        <p>Reviving and supporting open-source projects for the community.</p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="service-box">
+              <i class="fas fa-heartbeat"></i>
+              <h4>Project Revitalization</h4>
+              <p>We bring inactive or outdated open-source projects back to life with updates and maintenance.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-box">
+              <i class="fas fa-cube"></i>
+              <h4>New Open-Source Initiatives</h4>
+              <p>Creating and maintaining new open-source projects that solve real-world challenges.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-box">
+              <i class="fas fa-calendar-alt"></i>
+              <h4>Community Contributions</h4>
+              <p>Connecting developers and contributors to meaningful open-source projects.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-box">
+              <i class="fas fa-broadcast-tower"></i>
+              <h4>Consulting & Guidance</h4>
+              <p>Helping organizations integrate open-source solutions efficiently and securely.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="cta-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-2"></div>
+          <div class="col-md-4 text-md-start text-center">
+            <h2>Contact Us</h2>
+            <p>Want to collaborate or support an open-source project?</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:general@ossrevival.org" class="contact-email">general@ossrevival.org</a>
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end text-center">
+            <a href="mailto:general@ossrevival.org" class="btn">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="clients-section">
+      <div class="container">
+        <h2>Contributions</h2>
+        <p>Here are some projects we've supported and revived.</p>
+        <button id="prev-btn" class="nav-button" disabled>
+          <img src="img/previous.png" alt="Previous">
+        </button>
+        <div id="clients-grid" class="clients-logos">
+          <span>Vivamus Quam</span>
+          <span>Etiam Morbi</span>
+          <span>Suscipit Aliquam</span>
+          <span>Morbi Suscipit</span>
+          <span>Vivamus Nec</span>
+          <span>Lorem Ipsum</span>
+          <span>Dolor Sit</span>
+          <span>Aliquam Morbi</span>
+          <span>Adipiscing Elit</span>
+          <span>Quisque Quam</span>
+          <span>Etiam Morbi</span>
+          <span>Suscipit Aliquam</span>
+          <span>Morbi Suscipit</span>
+          <span>Vivamus Nec</span>
+          <span>Lorem Ipsum</span>
+          <span>Dolor Sit</span>
+          <span>Aliquam Morbi</span>
+          <span>Adipiscing Elit</span>
+        </div>
+        <button id="next-btn" class="nav-button">
+          <img src="img/next.png" alt="Next">
+        </button>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 feature-item">
+            <i class="fas fa-history"></i>
+            <h4>Bringing Projects Back to Life</h4>
+            <p>We restore abandoned open-source projects, ensuring they get the support and updates needed to stay relevant.</p>
+          </div>
+          <div class="col-md-4 feature-item">
+            <i class="fas fa-rocket"></i>
+            <h4>Launching New Open-Source Solutions</h4>
+            <p>We don’t just fix old projects; we innovate by creating fresh, cutting-edge open-source tools for the community.</p>
+          </div>
+          <div class="col-md-4 feature-item">
+            <i class="fas fa-users-cog"></i>
+            <h4>Developer-Focused Approach</h4>
+            <p>We work closely with the developer community to improve usability, functionality, and long-term project sustainability.</p>
+          </div>
+          <div class="col-md-4 feature-item">
+            <i class="fas fa-network-wired"></i>
+            <h4>Building a Strong Open-Source Network</h4>
+            <p>We connect contributors, businesses, and tech communities to collaborate on open-source initiatives worldwide.</p>
+          </div>
+          <div class="col-md-4 feature-item">
+            <i class="fas fa-bug"></i>
+            <h4>Security & Reliability</h4>
+            <p>We identify vulnerabilities, apply critical patches, and keep projects stable and secure for users and developers alike.</p>
+          </div>
+          <div class="col-md-4 feature-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h4>Funding & Sustainability</h4>
+            <p>Through sponsorships, donations, and partnerships, we ensure long-term open-source project survival and growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="faq-section">
+      <div class="container">
+        <div class="faq-container">
+          <div class="faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question">
+              <i class="fas fa-tools faq-icon"></i>
+              <strong>What kind of projects does OSS Revival support?</strong>
+              <i class="fas fa-chevron-down faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer" style="display: block;"> OSS Revival focuses on <strong>revitalizing open-source projects</strong> that have <strong>significant community value</strong> but are no longer actively maintained. We aim to bring these projects back to life by <strong>fixing bugs, modernizing codebases, and ensuring long-term support</strong>. Additionally, we <strong>initiate new open-source projects</strong> that align with <strong>industry needs, security concerns, and developer interests</strong>. </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-code faq-icon"></i>
+              <strong>How can I contribute?</strong>
+              <i class="fas fa-chevron-right faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer"> You can contribute by: <br> - <strong>Writing code</strong>: Help fix bugs, add features, or improve efficiency. <br> - <strong>Reporting bugs</strong>: Identify issues and help improve project stability. <br> - <strong>Improving documentation & translations</strong>: Make projects more accessible to a wider audience. <br> - <strong>Supporting financially</strong>: Donations or sponsorships allow us to expand open-source initiatives. </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-file-signature faq-icon"></i>
+              <strong>Can I submit a project for revival?</strong>
+              <i class="fas fa-chevron-right faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <strong>Yes!</strong> If you know of an <strong>open-source project that has been abandoned</strong> but still holds value, you can submit a request for revival. We review each project based on: <br> - <strong>Community demand</strong> – How many users still rely on it? <br> - <strong>Technical feasibility</strong> – Can the project be modernized with reasonable effort? <br> - <strong>Security risks</strong> – Does it require critical fixes to prevent vulnerabilities?
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-handshake faq-icon"></i>
+              <strong>Can companies collaborate with OSS Revival?</strong>
+              <i class="fas fa-chevron-right faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <strong>Absolutely!</strong> We welcome collaborations with <strong>tech companies, organizations, and institutions</strong> that want to contribute to the open-source ecosystem. Companies can support OSS Revival by: <br> - <strong>Sponsoring a project or initiative</strong>
+              <br> - <strong>Providing technical expertise and developer resources</strong>
+              <br> - <strong>Partnering with us to integrate open-source solutions into enterprise environments</strong>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <i class="fas fa-clock faq-icon"></i>
+              <strong>Does OSS Revival provide long-term support for projects?</strong>
+              <i class="fas fa-chevron-right faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <strong>Yes,</strong> we aim to provide <strong>long-term maintenance and updates</strong> for the projects we revive. This includes: - <strong>Regular bug fixes</strong> - <strong>Security patches</strong> - <strong>Compatibility updates</strong> to ensure the project remains relevant. However, our ability to sustain a project depends on <strong>community engagement and contributions</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2>Team</h2>
+        <p>Meet the passionate people behind OSS Revival.</p>
+        <div class="row">
+          <div class="col-md-3 team-member">
+            <div class="card">
+              <div class="icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="info">
+                <h4>John Doe</h4>
+                <p>Chief Executive Officer</p>
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 team-member">
+            <div class="card">
+              <div class="icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="info">
+                <h4>Jane Smith</h4>
+                <p>Product Manager</p>
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 team-member">
+            <div class="card">
+              <div class="icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="info">
+                <h4>Mike Johnson</h4>
+                <p>CTO</p>
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 team-member">
+            <div class="card">
+              <div class="icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="info">
+                <h4>Sarah Williams</h4>
+                <p>Marketing Director</p>
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer footer-01">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:general@ossrevival.org">general@ossrevival.org</a>
+            </p>
+          </div>
+          <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
+            <h3>Follow Us</h3>
+            <p>
+              <em>"Stay connected with the latest updates and insights from us."</em>
+            </p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <div class="copyright"> Copyright <strong>OSS Revival</strong>. All Rights Reserved </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts/particles-config.js"></script>
+  </body>
+</html>
