@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles/styles.css?version=0.1" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -101,11 +101,11 @@
             <p>Want to collaborate or support an open-source project?</p>
             <p>
               <strong>Email:</strong>
-              <a href="mailto:general@ossrevival.org" class="contact-email">general@ossrevival.org</a>
+              <a href="mailto:general@datafortress.org" class="contact-email">general@datafortress.org</a>
             </p>
           </div>
           <div class="col-md-4 text-md-end text-center">
-            <a href="mailto:general@ossrevival.org" class="btn">Get in Touch</a>
+            <a href="mailto:general@datafortress.org" class="btn">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -113,23 +113,28 @@
     <section id="portfolio" class="clients-section">
       <div class="container">
         <h2>Contributions</h2>
-        <p>Here are some projects we've have contributed.</p>
+        <p>Here are some projects we've supported and contributed.</p>
         <button id="prev-btn" class="nav-button" disabled>
           <img src="img/previous.png" alt="Previous">
         </button>
         <div id="clients-grid" class="clients-logos">
-          <span><a href="https://github.com/Project-OSS-Revival/alien" target="_blank">alien</a></span>
-          <span><a href="https://github.com/bpftrace/bpftrace" target="_blank">bpftrace</a></span>
-          <span><a href="https://github.com/Project-OSS-Revival/enca" target="_blank">enca</a></span>
-          <span><a href="https://tracker.debian.org/pkg/doctest" target="_blank">doctest</a></span>
-          <span><a href="https://github.com/DynamoRIO/drmemory" target="_blank">drmemory</a></span>
-          <span><a href="https://tracker.debian.org/pkg/libextractor" >libextractor</a></span>
-          <span><a href="https://github.com/canonical/multipass" >multipass</a></span>
-          <span><a href="https://github.com/vesoft-inc/nebula" >nebula</a></span>
-          <span><a href="https://github.com/odygrd/quill" target="_blank">quill</a></span>
-          <span><a href="https://tracker.debian.org/pkg/sqlcipher" target="_blank">sqlcipher</a></span>
-          <span><a href="https://github.com/Project-OSS-Revival/ssmtp" target="_blank">ssmtp</a></span>
-           <span><a href="https://github.com/openzfs/zfs" target="_blank">zfs</a></span>
+            <a href="https://github.com/Project-OSS-Revival/alien" target="_blank" class="contribution-link">alien</a>
+            <a href="https://github.com/bpftrace/bpftrace" target="_blank" class="contribution-link">bpftrace</a>
+            <a href="https://tracker.debian.org/pkg/cryfs" target="_blank" class="contribution-link">cryfs</a>
+            <a href="https://github.com/Project-OSS-Revival/enca" target="_blank" class="contribution-link">enca</a>
+            <a href="https://tracker.debian.org/pkg/doctest" target="_blank" class="contribution-link">doctest</a>
+            <a href="https://github.com/DynamoRIO/drmemory" target="_blank" class="contribution-link">drmemory</a>
+            <a href="https://tracker.debian.org/pkg/judy" target="_blank" class="contribution-link">judy</a>
+            <a href="https://tracker.debian.org/pkg/libarchive" target="_blank" class="contribution-link">libarchive</a>
+            <a href="https://github.com/canonical/multipass" target="_blank" class="contribution-link">multipass</a>
+            <a href="https://tracker.debian.org/pkg/procinfo" target="_blank" class="contribution-link">procinfo</a>
+            <a href="https://github.com/vesoft-inc/nebula" target="_blank" class="contribution-link">nebula</a>
+            <a href="https://github.com/odygrd/quill" target="_blank" class="contribution-link">quill</a>
+            <a href="https://tracker.debian.org/pkg/rdiff-backup-fs" target="_blank" class="contribution-link">rdiff-backup-fs</a>
+            <a href="https://tracker.debian.org/pkg/sqlcipher" target="_blank" class="contribution-link">sqlcipher</a>
+            <a href="https://github.com/Project-OSS-Revival/ssmtp" target="_blank" class="contribution-link">ssmtp</a>
+            <a href="https://tracker.debian.org/pkg/utfcpp" target="_blank" class="contribution-link">utfcpp</a>
+            <a href="https://github.com/openzfs/zfs" target="_blank" class="contribution-link">zfs</a>
         </div>
         <button id="next-btn" class="nav-button">
           <img src="img/next.png" alt="Next">
@@ -237,7 +242,7 @@
         <div class="row">
           <div class="col-md-3 team-member">
             <div class="card">
-              <div class="icon">
+              <div class="icon mt-4">
                 <i class="fas fa-user-circle"></i>
               </div>
               <div class="info">
@@ -254,6 +259,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-3 team-member">
             <div class="card">
               <div class="profile-image">
@@ -263,10 +269,6 @@
                 <h4>Syed Shahrukh Hussain</h4>
                 <p>Senior Open Source Developer</p>
                 <div class="social">
-                  <!--
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>-->
                   <a href="https://github.com/Syed-Shahrukh-OSSRevival">
                     <i class="fab fa-github"></i>
                   </a>
@@ -279,11 +281,6 @@
           </div>
           <div class="col-md-3 team-member">
             <div class="card">
-              <!-- Use this block for default profile image -->
-               <!-- <div class="icon">
-                <i class="fas fa-user-circle"></i>
-              </div>-->
-              <!-- Use this block for profile image -->
               <div class="profile-image">
                 <img src="img/team/artem.jpg" alt="Artem Vlasenko">
               </div>
@@ -303,19 +300,12 @@
           </div>
           <div class="col-md-3 team-member">
             <div class="card">
-              <!-- Use this block for default profile image -->
-              <div class="icon">
+              <div class="icon mt-4">
                 <i class="fas fa-user-circle"></i>
               </div>
-              <!-- Use this block for profile image -->
-              <!--
-              <div class="profile-image">
-                <img src="img/team/shahrukh.jpeg" alt="Syed Shahrukh Hussain">
-              </div>
-              -->
               <div class="info">
                 <h4>Egor Kovalchuk</h4>
-                <p>Software Engineer(Intern)</p>
+                <p>Software Engineer (Intern)</p>
                 <div class="social">
                   <a href="https://github.com/Egor-OSSRevival">
                     <i class="fab fa-github"></i>
@@ -331,10 +321,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h3>Contact Us</h3>
+            <h3>Find Us</h3>
+            <p>
+              <strong>Business Center</strong>
+              <br> Sharjah Publishing City Free Zone, <br> Sharjah, United Arab Emirates
+            </p>
             <p>
               <strong>Email:</strong>
-              <a href="mailto:general@ossrevival.org">general@ossrevival.org</a>
+              <a href="mailto:general@datafortress.org">general@datafortress.org</a>
             </p>
           </div>
           <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
@@ -343,17 +337,8 @@
               <em>"Stay connected with the latest updates and insights from us."</em>
             </p>
             <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
               <a href="https://github.com/Project-OSS-Revival">
                 <i class="fab fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>

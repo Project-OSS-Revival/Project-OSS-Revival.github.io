@@ -359,54 +359,43 @@ html {
   }
   .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
   .team-member .card {
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
   }
   .team-member .icon {
-    font-size: 200px;
+    font-size: 160px;
     color: #81b433;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  .team-member .profile-image {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 15px;
-    margin-top: 5rem;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #81b433;
-  }
-
-.team-member .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   .team-member .info {
-    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   .team-member .info h4 {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #364c15;
+    color: rgb(54, 76, 21);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .team-member .info p {
     color: #364c15;
     margin-bottom: 10px;
   }
   .team-member .info .social {
-    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 15px;
   }
   .team-member .info .social a {
     color: #364c15;
     margin: 0 5px;
+    text-decoration: none;
   }
   .divider {
     height: 1px;
@@ -612,7 +601,7 @@ html {
     }
     .clients-logos span {
       margin: 10px 0;
-      width: 60%;
+      width: 80%;
     }
     .faq-container {
       width: 90%;
@@ -757,3 +746,39 @@ html {
     }
   }
   
+  .clients-logos {
+    gap: 20px;
+  }
+
+  .contribution-link {
+    display: inline-block;
+    padding: 12px 22px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #517619;
+    text-decoration: none;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease;
+  }
+
+  .contribution-link:hover {
+    color: #4e7a0c;
+    transform: translateY(-4px);
+  }
+  .team-member .profile-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    margin-top: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #81b433;
+  }
+  .team-member .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }

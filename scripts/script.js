@@ -26,12 +26,12 @@ document.querySelectorAll('.faq-question').forEach(item => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const clients = document.querySelectorAll('.clients-logos span');
-    let clientsPerPage = window.innerWidth < 768 ? 4 : 6;
+    const clients = document.querySelectorAll('.clients-logos a');
+    let clientsPerPage = window.innerWidth < 768 ? 6 : 8;
     let currentPage = 0;
 
     function showPage(page) {
-        clientsPerPage = window.innerWidth < 768 ? 4 : 6; 
+        clientsPerPage = window.innerWidth < 768 ? 6 : 8; 
         const start = page * clientsPerPage;
         const end = start + clientsPerPage;
 
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updatePagination() {
-        clientsPerPage = window.innerWidth < 768 ? 4 : 6;
+        clientsPerPage = window.innerWidth < 768 ? 6 : 8;
         currentPage = 0;
         showPage(currentPage);
     }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('resize', function () {
         let oldClientsPerPage = clientsPerPage;
-        clientsPerPage = window.innerWidth < 768 ? 4 : 6;
+        clientsPerPage = window.innerWidth < 768 ? 6 : 8;
 
         if (clientsPerPage !== oldClientsPerPage) {
             currentPage = 0;
