@@ -25,72 +25,39 @@ document.querySelectorAll('.faq-question').forEach(item => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const clients = document.querySelectorAll('.clients-logos a');
-    let clientsPerPage = window.innerWidth < 768 ? 6 : 8;
-    let currentPage = 0;
-
-    function showPage(page) {
-        clientsPerPage = window.innerWidth < 768 ? 6 : 8; 
-        const start = page * clientsPerPage;
-        const end = start + clientsPerPage;
-
-        clients.forEach((client, index) => {
-            client.style.display = (index >= start && index < end) ? 'inline-block' : 'none';
-        });
-
-        document.getElementById('prev-btn').disabled = page === 0;
-        document.getElementById('next-btn').disabled = end >= clients.length;
-    }
-
-    function updatePagination() {
-        clientsPerPage = window.innerWidth < 768 ? 6 : 8;
-        currentPage = 0;
-        showPage(currentPage);
-    }
-
-    document.getElementById('next-btn').addEventListener('click', function () {
-        if ((currentPage + 1) * clientsPerPage < clients.length) {
-            currentPage++;
-            showPage(currentPage);
-        }
-    });
-
-    document.getElementById('prev-btn').addEventListener('click', function () {
-        if (currentPage > 0) {
-            currentPage--;
-            showPage(currentPage);
-        }
-    });
-
-    window.addEventListener('resize', function () {
-        let oldClientsPerPage = clientsPerPage;
-        clientsPerPage = window.innerWidth < 768 ? 6 : 8;
-
-        if (clientsPerPage !== oldClientsPerPage) {
-            currentPage = 0;
-        }
-
-        showPage(currentPage);
-    });
-
-    updatePagination();
-});
-
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll("section[id], .footer[id]");
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    const navbar = document.querySelector(".navbar");
+    const darkSections = document.querySelectorAll(".hero-section, .cta-section, .footer");
+
+    function setNavHeight() {
+        document.documentElement.style.setProperty("--nav-height", navbar.offsetHeight + "px");
+    }
+
+    function updateNavTheme() {
+        const line = navbar.getBoundingClientRect().bottom / 2;
+        const onDark = [...darkSections].some((el) => {
+            const r = el.getBoundingClientRect();
+            return r.top <= line && r.bottom > line;
+        });
+        navbar.classList.toggle("on-dark", onDark);
+    }
 
     function activateNav() {
         let currentSection = "";
-        
+        const offset = navbar.offsetHeight + 20;
+
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            if (window.scrollY + offset >= section.offsetTop) {
                 currentSection = section.getAttribute("id");
             }
         });
+
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+            currentSection = "contact";
+        }
 
         navLinks.forEach((link) => {
             link.classList.remove("active");
@@ -100,5 +67,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", activateNav);
+    function onScroll() {
+        activateNav();
+        updateNavTheme();
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", () => { setNavHeight(); onScroll(); });
+    setNavHeight();
+    onScroll();
 });

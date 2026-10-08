@@ -24,13 +24,16 @@
               <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team">Team</a>
@@ -40,8 +43,8 @@
             </li>
           </ul>
           <div class="navbar-icons d-none d-lg-block">
-            <a href="https://github.com/Project-OSS-Revival" target="_blank">
-              <i class="fab fa-github"></i>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>
@@ -52,7 +55,7 @@
       <div class="container">
         <h1>Welcome to OSS Revival</h1>
         <p>Empowering open-source, one project at a time.</p>
-        <a href="#contact" class="btn btn-cta">Get Started</a>
+        <a href="#get-in-touch" class="btn btn-cta">Get Started</a>
       </div>
       <div class="wave"></div>
     </section>
@@ -92,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="cta-section">
+    <section id="get-in-touch" class="cta-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-2"></div>
@@ -112,36 +115,40 @@
     </section>
     <section id="portfolio" class="clients-section">
       <div class="container">
-        <h2>Contributions</h2>
-        <p>Here are some projects we've supported and contributed.</p>
-        <button id="prev-btn" class="nav-button" disabled>
-          <img src="img/previous.png" alt="Previous">
-        </button>
-        <div id="clients-grid" class="clients-logos">
-            <a href="https://github.com/Project-OSS-Revival/alien" target="_blank" class="contribution-link">alien</a>
-            <a href="https://github.com/bpftrace/bpftrace" target="_blank" class="contribution-link">bpftrace</a>
-            <a href="https://tracker.debian.org/pkg/cryfs" target="_blank" class="contribution-link">cryfs</a>
-            <a href="https://github.com/Project-OSS-Revival/enca" target="_blank" class="contribution-link">enca</a>
-            <a href="https://tracker.debian.org/pkg/doctest" target="_blank" class="contribution-link">doctest</a>
-            <a href="https://github.com/DynamoRIO/drmemory" target="_blank" class="contribution-link">drmemory</a>
-            <a href="https://tracker.debian.org/pkg/judy" target="_blank" class="contribution-link">judy</a>
-            <a href="https://tracker.debian.org/pkg/libarchive" target="_blank" class="contribution-link">libarchive</a>
-            <a href="https://github.com/canonical/multipass" target="_blank" class="contribution-link">multipass</a>
-            <a href="https://tracker.debian.org/pkg/procinfo" target="_blank" class="contribution-link">procinfo</a>
-            <a href="https://github.com/vesoft-inc/nebula" target="_blank" class="contribution-link">nebula</a>
-            <a href="https://github.com/odygrd/quill" target="_blank" class="contribution-link">quill</a>
-            <a href="https://tracker.debian.org/pkg/rdiff-backup-fs" target="_blank" class="contribution-link">rdiff-backup-fs</a>
-            <a href="https://tracker.debian.org/pkg/sqlcipher" target="_blank" class="contribution-link">sqlcipher</a>
-            <a href="https://github.com/Project-OSS-Revival/ssmtp" target="_blank" class="contribution-link">ssmtp</a>
-            <a href="https://tracker.debian.org/pkg/utfcpp" target="_blank" class="contribution-link">utfcpp</a>
-            <a href="https://github.com/openzfs/zfs" target="_blank" class="contribution-link">zfs</a>
+        <h2>Projects</h2>
+        <p>Debian packaging and upstream development, in numbers.</p>
+        <div class="project-stats">
+          <div class="project-stat"><strong data-count-for="debian-maintained"></strong><span>Debian packages <br>we maintain</span></div>
+          <div class="project-stat"><strong data-count-for="debian-adopting"></strong><span>Packages adopted, <br>upload pending</span></div>
+          <div class="project-stat"><strong data-count-for="debian-qa"></strong><span>Debian QA <br>uploads</span></div>
+          <div class="project-stat"><strong data-count-for="foss"></strong><span>Upstream projects <br>maintained or contributed</span></div>
         </div>
-        <button id="next-btn" class="nav-button">
-          <img src="img/next.png" alt="Next">
-        </button>
+        <div class="project-index">
+          <details class="project-block" open>
+            <summary><h3>Debian · Maintained <small>Packages we adopted · <span data-count-for="debian-maintained"></span></small></h3></summary>
+            <ul id="debian-maintained" class="project-cols"></ul>
+          </details>
+          <details class="project-block" open>
+            <summary><h3>Debian · Adopted, upload pending <small>Taken over via WNPP · <span data-count-for="debian-adopting"></span></small></h3></summary>
+            <ul id="debian-adopting" class="project-cols"></ul>
+          </details>
+          <details class="project-block" open>
+            <summary><h3>Debian · Contributed <small>Packages contributed through QA, NMU and Debian Commons upload· <span data-count-for="debian-qa"></span></small></h3></summary>
+            <ul id="debian-qa" class="project-cols"></ul>
+          </details>
+          <details class="project-block" open>
+            <summary><h3>Upstream · Maintained <small>We are upstream · <span data-count-for="foss-maintained"></span></small></h3></summary>
+            <ul id="foss-maintained" class="project-cols up"></ul>
+          </details>
+          <details class="project-block" open>
+            <summary><h3>Upstream · Contributed <small>Fixes and pull requests · <span data-count-for="foss-contributed"></span></small></h3></summary>
+            <ul id="foss-contributed" class="project-cols up"></ul>
+          </details>
+          <p class="project-key"><sup>↑</sup> also maintained upstream &nbsp;&nbsp; <sup>D</sup> also maintained in Debian</p>
+        </div>
       </div>
     </section>
-    <section class="features-section">
+    <section id="about" class="features-section">
       <div class="container">
         <div class="row">
           <div class="col-md-4 feature-item">
@@ -177,7 +184,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="faq-section">
+    <section id="faq" class="faq-section">
       <div class="container">
         <div class="faq-container">
           <div class="faq-header">
@@ -239,11 +246,11 @@
       <div class="container">
         <h2>Team</h2>
         <p>Meet the passionate people behind OSS Revival.</p>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-3 team-member">
             <div class="card">
-              <div class="icon mt-4">
-                <i class="fas fa-user-circle"></i>
+              <div class="profile-image">
+                <img src="img/team/yevgen.jpeg" alt="Yevgen Goncharuk">
               </div>
               <div class="info">
                 <h4>Yevgen Goncharuk</h4>
@@ -267,57 +274,35 @@
               </div>
               <div class="info">
                 <h4>Syed Shahrukh Hussain</h4>
-                <p>Senior Open Source Developer - Debian Maintainer</p>
+                <p>Senior Open Source Developer</p>
                 <div class="social">
                   <a href="https://github.com/Syed-Shahrukh-OSSRevival">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/syed-shahrukh-hussain" target="_blank">
+                  <a href="https://www.linkedin.com/in/syed-shahrukh-hussain">
                     <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 team-member">
-            <div class="card">
-              <div class="profile-image">
-                <img src="img/team/artem.jpg" alt="Artem Vlasenko">
-              </div>
-              <div class="info">
-                <h4>Artem Vlasenko</h4>
-                <p>Software Engineer (Intern)</p>
-                <div class="social">
-                  <a href="https://github.com/Artem-OSSRevival">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/artem-vlasenko-b1b838328" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 team-member">
-            <div class="card">
-              <div class="icon mt-4">
-                <i class="fas fa-user-circle"></i>
-              </div>
-              <div class="info">
-                <h4>Egor Kovalchuk</h4>
-                <p>Software Engineer (Intern)</p>
-                <div class="social">
-                  <a href="https://github.com/Egor-OSSRevival" target="_blank">
-                    <i class="fab fa-github"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="contributors">
+          <h3>Contributors</h3>
+          <p>People who have helped bring these projects back.</p>
+          <div class="contributor-list">
+            <a class="contributor" href="https://www.linkedin.com/in/artem-vlasenko-b1b838328" target="_blank" rel="noopener" data-name="Artem Vlasenko" aria-label="Artem Vlasenko">
+              <img src="img/team/artem.jpg" alt="Artem Vlasenko" loading="lazy">
+            </a>
+            <a class="contributor" href="https://github.com/Egor-OSSRevival" target="_blank" rel="noopener" data-name="Egor Kovalchuk" aria-label="Egor Kovalchuk">
+              <img src="https://github.com/Egor-OSSRevival.png?size=96" alt="Egor Kovalchuk" loading="lazy">
+            </a>
+          </div>
+        </div>
       </div>
     </section>
-    <div class="footer footer-01">
+    <div id="contact" class="footer footer-01">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -337,7 +322,7 @@
               <em>"Stay connected with the latest updates and insights from us."</em>
             </p>
             <div class="social-icons">
-              <a href="https://github.com/Project-OSS-Revival" target="_blank">
+              <a href="#">
                 <i class="fab fa-github"></i>
               </a>
             </div>
@@ -352,6 +337,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/projects.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="scripts/particles-config.js"></script>
   </body>
