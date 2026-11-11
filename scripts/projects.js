@@ -1,12 +1,11 @@
 
 const DEBIAN = {
   maintained: [
-    'alien', 'cramfsswap', 'cryfs', 'doctest', 'enca', 'judy', 'libarchive', 'palabos',
-    'plptools', 'procinfo', 'quill', 'rdiff-backup-fs', 'rmlint', 'sqlcipher', 'ssmtp', 'utfcpp'
+    'alien', 'bear', 'cramfsswap', 'cryfs', 'doctest', 'enca', 'judy', 'libarchive', 'libb64', 'palabos', 'plptools', 'procinfo', 'quill', 'rdiff-backup-fs', 'rmlint','rust-json5', 'sqlcipher', 'srain', 'ssmtp', 'utfcpp'
   ],
   adopting: [
-    'bear', 'dmalloc', 'gts', 'ifstat', 'network-manager-openconnect', 'openconnect',
-    'rust-json5', 'srain', 'stoken', 'vpnc-scripts', 'xinetd', 'zbar'
+    'dmalloc', 'gnunet', 'gts', 'ifstat', 'network-manager-openconnect', 'openconnect',
+    'vpnc-scripts', 'xinetd'
   ],
   qa: [
     'amavisd-milter', 'bluemon', 'cadabra2', 'dact', 'efte', 'flpsed', 'gfxboot', 'jpegpixi',
